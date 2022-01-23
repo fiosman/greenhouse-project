@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from "react";
 
 export const ThemeContext = createContext();
 
@@ -10,8 +10,8 @@ export default function ThemeProvider({ children }) {
   return (
     <ThemeContext.Provider
       value={{
-        themeName,
-        setThemeName
+        themeName: "night",
+        setThemeName,
       }}
     >
       {children}
