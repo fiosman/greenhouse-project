@@ -3,4 +3,6 @@
 
 import React, { useContext, createContext } from "react";
 
-const ClimateContext = createContext();
+export const ClimateContext = createContext();
+
+export const useClimate = () => useContext(ClimateContext);
