@@ -13,8 +13,8 @@ export default function ClimateProvider({ children }) {
   return (
     <ClimateContext.Provider
       value={{
-        temperature: temperature,
-        setTemperature: setTemperature,
+        temperature,
+        setTemperature,
       }}
     >
       {children}
